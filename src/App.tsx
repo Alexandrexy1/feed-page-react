@@ -1,13 +1,16 @@
-import { Header } from './components/header';
-import { Sidebar } from './components/sidebar';
-
-export default function App() {
-  return (
-    <>
-      <Header />
-      <Sidebar />
-    </>
-  )
-}
+import { createBrowserRouter } from 'react-router-dom';
+import { Layout } from './components/layout';
+import { Home } from './pages/home';
 
 
+export const router = createBrowserRouter([
+  {
+    element: <Layout/>,
+    children: [
+      {
+        path: '/',
+        element: <Home/>
+      }
+    ]
+  }
+])
