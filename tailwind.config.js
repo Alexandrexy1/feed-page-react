@@ -5,10 +5,12 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
-    backgroundColor: {
-      'bg-neutral-820': '#212121'
-    }
+    extend: {
+      backgroundColor: {
+        'neutral-820': '#212121',
+        
+      }
+    },
   },
   plugins: [],
 }
