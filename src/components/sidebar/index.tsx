@@ -1,19 +1,30 @@
+import { MdOutlineEdit } from "react-icons/md";
 
 export function Sidebar() {
     return (
-        <div>
-            <div className="bg-neutral-800 rounded-lg w-60 h-64 flex flex-col justify-between absolute">
-                <div className="bg-sky-50 rounded-t-lg w-full h-16 absolute"></div>
-                <div className="bg-red-500 w-1/4 mt-8 m-auto p-7 rounded-md outline outline-green-400 outline-1 relative"></div>
-                <div className="flex flex-col m-auto mt-0">
-                    <p className="text-slate-100">Alexandre Nascimento</p>
-                    <p className="text-sm m-auto">Full-Stack developer</p>
-                </div>
-                <button 
-                    className="border w-2/3 h-10 mb-8 m-auto rounded-md border-green-400 text-green-400 hover:border-green-500 hover:text-green-500">
-                        Editar seu perfil
-                </button>
+        <aside className="w-100 bg-neutral-800">
+            <img 
+                className="w-full object-cover h-20"
+                src="https://images.unsplash.com/photo-1533709752211-118fcaf03312?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
+            <div className="flex flex-col items-center">
+                <img 
+                    className="w-14 border-slate-800 border-4 outline-green-500 box-content outline rounded-md mt-[-2rem]"
+                    src="https://github.com/alexandrexy1.png"
+                    alt="profile picture" />
+                <p 
+                    className="font-bold mt-6 leading-6 text-gray-200">Alexandre Nascimento</p>
+                <span className="text-sm text-gray-300">Full-Stack developer</span>
+
             </div>
-        </div>
+            <footer className="my-6 border-t-zinc-700 border-t px-8 pt-8 pb-3">
+                <a 
+                    className="text-green-500 hover:text-green-600 rounded-lg h-12 flex justify-center items-center gap-1 border border-green-500 hover:border-green-600"
+                    href="#">
+                    <MdOutlineEdit size={20}/>
+                    Editar seu perfil
+                </a>
+
+            </footer>
+        </aside>
     )
 }

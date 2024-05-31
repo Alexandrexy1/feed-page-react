@@ -1,7 +1,7 @@
 export function Post() {
     return(
-        <div className="bg-slate-50 w-2/4 h-80">
-            
-        </div>
+        <main className="h-80">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem suscipit soluta reiciendis corrupti unde fugit optio possimus quo dolor ipsa rem porro quod, obcaecati magnam distinctio impedit, ut perspiciatis? Consequuntur!
+        </main>
     )
 }
